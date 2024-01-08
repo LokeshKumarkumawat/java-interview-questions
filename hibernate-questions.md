@@ -1834,6 +1834,7 @@ session.persist(entity);
 
 
 #### Q. What will happen if we don’t have no-args constructor in Entity bean?
+#### Q. How to use Native SQL Queries in Hibernate?
 #### Q. What is difference between sorted collection and ordered collection, which one is better?
 #### Q. What are the collection types in Hibernate?
 #### Q. How to implement Joins in Hibernate?
