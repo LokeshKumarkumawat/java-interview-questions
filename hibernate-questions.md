@@ -1769,7 +1769,79 @@ In the hibernate session we can maintain only one employee object in persistent 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is difference between Hibernate save(), saveOrUpdate() and persist() methods?
+## Q. What is difference between Hibernate save(), saveOrUpdate() and persist() methods?
+
+### 1\. `save()` Method:
+
+-   Purpose: Used to insert a new record into the database.
+-   ID Handling:
+    -   If the primary key (ID) is assigned manually before calling `save()`, Hibernate will use that value for insertion.
+    -   If the ID is not assigned, Hibernate will generate it.
+-   Existing Object Handling:
+    -   If an object with the same identifier already exists in the session, `save()` will throw a `NonUniqueObjectException`.
+-   Return Value:
+    -   `save()` returns the generated identifier (the primary key).
+
+javaCopy code
+
+```
+// Example usage of save()
+Entity entity = new Entity();
+// Set entity properties
+Serializable generatedId = session.save(entity);
+```
+
+### 2\. `saveOrUpdate()` Method:
+
+-   Purpose: Used to either save a new record or update an existing one.
+-   ID Handling:
+    -   If the object is transient (not associated with any session), it will be saved.
+    -   If the object is detached or persistent, it will be updated.
+-   Existing Object Handling:
+    -   If an object with the same identifier already exists in the session, `saveOrUpdate()` will update the existing one.
+    -   If an object with the same identifier does not exist, `saveOrUpdate()` will insert a new record.
+-   Return Value:
+    -   `saveOrUpdate()` returns void.
+
+javaCopy code
+
+```
+// Example usage of saveOrUpdate()
+Entity entity = new Entity();
+// Set entity properties
+session.saveOrUpdate(entity);
+```
+
+### 3\. `persist()` Method:
+
+-   Purpose: Used to make a transient instance persistent.
+-   ID Handling:
+    -   If the object is transient, it will be saved.
+    -   If the object is detached or persistent, `persist()` will throw an exception.
+-   Existing Object Handling:
+    -   Unlike `saveOrUpdate()`, `persist()` is more focused on ensuring the given instance becomes persistent. It does not guarantee an immediate execution of the SQL INSERT.
+-   Return Value:
+    -   `persist()` returns void.
+
+javaCopy code
+
+```
+// Example usage of persist()
+Entity entity = new Entity();
+// Set entity properties
+session.persist(entity);
+```
+
+### Key Considerations:
+
+-   Choose `save()` when you are certain the object is new and you want to insert it.
+-   Use `saveOrUpdate()` when you want to handle both insertion and updating of records without explicitly checking the object's status.
+-   Prefer `persist()` when you want to ensure a transient instance becomes persistent, and you are not concerned about immediate database synchronization.
+
+Understanding the differences and use cases of these methods will help you make informed decisions based on the requirements of your Hibernate application.
+
+
+
 #### Q. What will happen if we don’t have no-args constructor in Entity bean?
 #### Q. What is difference between sorted collection and ordered collection, which one is better?
 #### Q. What are the collection types in Hibernate?
