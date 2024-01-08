@@ -1832,15 +1832,6 @@ Entity entity = new Entity();
 session.persist(entity);
 ```
 
-### Key Considerations:
-
--   Choose `save()` when you are certain the object is new and you want to insert it.
--   Use `saveOrUpdate()` when you want to handle both insertion and updating of records without explicitly checking the object's status.
--   Prefer `persist()` when you want to ensure a transient instance becomes persistent, and you are not concerned about immediate database synchronization.
-
-Understanding the differences and use cases of these methods will help you make informed decisions based on the requirements of your Hibernate application.
-
-
 
 #### Q. What will happen if we don’t have no-args constructor in Entity bean?
 #### Q. What is difference between sorted collection and ordered collection, which one is better?
