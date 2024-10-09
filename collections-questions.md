@@ -410,7 +410,7 @@ The front of the priority queue contains the least element according to the spec
 
 * PriorityQueue is an unbounded queue and grows dynamically. 
 * It does not allow NULL objects.
-* Objects added to PriorityQueue MUST be comparable.
+* Objects added to PriorityQueue MUST be comparable. [LINK](https://chatgpt.com/share/6706407f-ce78-800f-acde-89d8dfcc29d5)
 * The objects of the priority queue are ordered **by default in natural order**.
 * A Comparator can be used for custom ordering of objects in the queue.
 * The **head** of the priority queue is the **least** element based on the natural ordering or comparator based ordering. When we poll the queue, it returns the head object from the queue.
