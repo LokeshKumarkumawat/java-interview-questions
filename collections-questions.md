@@ -316,6 +316,7 @@ public class ArrayListLinkedListExample
 **Comparator**: A comparator object is capable of comparing two different objects. The class is not comparing its instances, but some other class’s instances. This comparator class must implement the `java.util.Comparator` interface.
 
 Comparable and Comparator both are interfaces and can be used to sort collection elements.
+[CHATGPT LINK](https://chatgpt.com/share/67062d72-5dd8-800f-a1b1-f717d3f222fd)
 
 | Sl.No|Comparable	         |Comparator                                                |
 |------|-----------------------|----------------------------------------------------------|
