@@ -103,6 +103,7 @@ Some collections, like HashSet, HashMap or HashTable use the hashcode value of a
 If hashcode() in not overridden then the default implementation in Object class will be used by collections. This implementation gives different values for different objects, even if they are equal according to the equals() method.
 
 [Link to ChatGPT](https://chatgpt.com/share/6705f061-616c-800f-a09d-213e4ebdd10d)
+[Link to CHATGPT2](https://chatgpt.com/share/67060ba9-e9f0-800f-b178-ab95c945babc)
 
 
 Example:
