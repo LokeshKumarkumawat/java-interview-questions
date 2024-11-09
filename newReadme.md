@@ -2955,6 +2955,21 @@ Example: **OutOfMemoryError, VirtualMachineError, AssertionError** etc.
 
 ## # 16. JAVA INHERITANCE
 
+
+
+# Inheritance in Java
+
+Inheritance in Java is a fundamental concept that allows one class to inherit properties and behaviors (fields and methods) from another class. It enables code reuse and establishes a natural relationship between classes in an application, often expressed as an "is-a" relationship. For example, a "Car" is a type of "Vehicle."
+
+## Key Concepts
+
+- **Parent (Super) Class**: The class whose properties are inherited.
+- **Child (Sub) Class**: The class that inherits from the parent class.
+
+Inheritance is implemented using the `extends` keyword in Java. The child class gains access to all accessible fields and methods of the parent class and can also add new fields and methods or override existing ones.
+
+
+
 <br/>
 
 ## Q. What is the difference between aggregation and composition?
