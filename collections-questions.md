@@ -35,6 +35,7 @@ The Map interface provides three collection views, which allow a map’s content
 Some useful classes which implement Map interface are – **ConcurrentHashMap**, **ConcurrentSkipListMap**, **EnumMap**, **HashMap**, **Hashtable**, **IdentityHashMap**, **LinkedHashMap**, **Properties**, **TreeMap** and **WeakHashMap**.
 
 **5. Stack**  
+(link)[https://chatgpt.com/share/673721e1-2a88-800f-8138-15cbe5129ac9]
 
 The Java Stack interface represents a classical stack data structure, where elements can be pushed to last-in-first-out (LIFO) stack of objects. In Stack we push an element to the top of the stack, and popped off from the top of the stack again later.
 
