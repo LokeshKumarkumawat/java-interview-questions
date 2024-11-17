@@ -1447,6 +1447,8 @@ public class Car {
 
 ## Q. How can constructor chaining be done using this keyword?
 
+[https://chatgpt.com/share/6739d6ef-2ea8-800f-85f1-ed10eec14e29](link)
+
 Java constructor chaining is a method of calling one constructor with the help of another while considering the present object. It can be done in 2 ways –
 
 * **Within same class**: It can be done using `this()` keyword for constructors in the same class.
