@@ -2848,6 +2848,8 @@ class B extends A {
 }
 ```
 
+[https://chatgpt.com/share/673b2f5b-d180-800f-9d91-2c751000b885](link)
+
 <div align="right">
     <b><a href="#related-topics">↥ back to top</a></b>
 </div>
