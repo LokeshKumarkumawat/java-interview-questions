@@ -3501,6 +3501,8 @@ Bank Rate of Interest: 0.0
 
 ## # 19. JAVA ABSTRACTION
 
+(https://chatgpt.com/share/673c1000-6384-800f-ac6f-9453dc447cf0)
+
 <br/>
 
 ## Q. What is the difference between abstract class and interface?
