@@ -320,6 +320,8 @@ public class ArrayListLinkedListExample
 Comparable and Comparator both are interfaces and can be used to sort collection elements.
 [CHATGPT LINK](https://chatgpt.com/share/67062d72-5dd8-800f-a1b1-f717d3f222fd)
 
+[SECOND](https://chatgpt.com/share/67489963-ab60-800f-b8bf-2b94068e920d)
+
 | Sl.No|Comparable	         |Comparator                                                |
 |------|-----------------------|----------------------------------------------------------|
 | 01.|Comparable provides a single sorting sequence. In other words, we can sort the collection on the basis of a single element such as id, name, and price.|The Comparator provides multiple sorting sequences. In other words, we can sort the collection on the basis of multiple elements such as id, name, and price etc.|
