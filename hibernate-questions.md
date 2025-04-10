@@ -1,4 +1,5 @@
 # Hibernate Interview Questions & Answers
+https://medium.com/@pratik.941/mastering-hibernate-key-interview-questions-3bcc5f2b7775
 
 ## Q. How to integrate hibernate with spring boot?
 
